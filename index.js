@@ -6,7 +6,7 @@ app.use(express.json());
 connectDB();
 // Use the authentication routes
 app.use(require("./routes/authroutes"));
-app.use('/product',require("./routes/productroutes"));
+app.use('/product',require("./routes/patients"));
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server is listening at port ${port}`);
